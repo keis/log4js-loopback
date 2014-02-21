@@ -9,7 +9,7 @@ Configure multiprocess to use loopback as it's append and get logging!
     appenders:
         - { type: "multiprocess",
             mode: "master",
-            appender: { type: "loopback" } }
+            appender: { type: "log4js-loopback" } }
         - { type: 'console' }
         - { type: 'file'
             filename: "logs/access.log",
